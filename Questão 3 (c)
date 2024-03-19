@@ -1,0 +1,30 @@
+/* b) 2, 4, 8, 16, 32, 64, ____*/
+
+ import java.util.Scanner;
+ 
+public class Main {
+	public static void main(String[] args) {
+	
+	 Scanner sc = new Scanner(System.in);
+	 
+	 int n;
+	 double raiz_quad; 
+	 
+	 System.out.print("Escreva um número: ");
+	 n = sc.nextInt();
+	 
+	 raiz_quad = Math.sqrt(n);
+	 
+	 if (n != raiz_quad * raiz_quad  ) {
+	     System.out.print("Não é um quadrado perfeito");
+	     
+	 }
+	 else {
+	     System.out.println(raiz_quad);
+	     System.out.print("É um quadrado perfeito");
+	 }
+    	 
+	sc.close();
+    }
+
+}
