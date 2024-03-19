@@ -1,0 +1,21 @@
+/* b) 2, 4, 8, 16, 32, 64, ____*/
+
+ import java.util.Scanner;
+ 
+public class Main {
+	public static void main(String[] args) {
+	
+	 Scanner sc = new Scanner(System.in);
+	 
+	 int dobro, n; 
+	 
+	 System.out.print("Escreva um número: ");
+	 n = sc.nextInt();
+	 
+	 dobro = n * 2 
+	
+	 System.out.print(dobro);
+	sc.close();
+    }
+
+}
