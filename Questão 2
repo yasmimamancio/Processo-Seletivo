@@ -1,0 +1,28 @@
+public class Main {
+	
+    public static void main(String[] args) {
+		
+	    Scanner sc = new Scanner(System.in);
+		  
+        int numero, auxiliar, anterior, atual;
+        
+        System.out.print("Escreva um número para saber se pertence a sequência de Fibonacci: ");
+        numero = sc.nextInt();
+        
+        anterior = 0;
+        atual = 1;
+        
+        while (anterior < numero) {
+            auxiliar = anterior + atual;
+            anterior = atual;
+            atual = auxiliar;
+        }
+        if (anterior == numero) {
+            System.out.print("O " + numero + " pertence a sequência de Fibonacci");
+        }
+        else {
+                System.out.print("Esse número não pertence a sequência de Fibonacci "); 
+        }    
+        sc.close();
+    }
+}
