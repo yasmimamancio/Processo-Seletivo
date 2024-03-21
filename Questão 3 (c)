@@ -1,4 +1,4 @@
-/c) 0, 1, 4, 9, 16, 25, 36, ____* próximo número 49/
+/*c) 0, 1, 4, 9, 16, 25, 36, ____próximo número 49, está sendo impresso o número vezes ele mesmo*/
 
 import java.util.Scanner;
  
@@ -8,22 +8,15 @@ public class Main {
 	 Scanner sc = new Scanner(System.in);
 	 
 	 int n;
-	 double raiz_quad; 
 	 
-	 System.out.print("Escreva um número: ");
+	 System.out.print("Quantos números vão ter na sequência: ");
 	 n = sc.nextInt();
 	 
-	 raiz_quad = Math.sqrt(n);
 	 
-	 if (n != raiz_quad * raiz_quad  ) {
-	     System.out.print("Não é um quadrado perfeito");   
+	 for (int i = 0; i < n; i++) {
+	    System.out.print(i*i + " ");
 	 }
-	 else {
-	     System.out.println(raiz_quad);
-	     System.out.print("É um quadrado perfeito");
-	 }
-    	 
 	sc.close();
+	
     }
-
 }
