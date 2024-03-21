@@ -1,0 +1,29 @@
+/*e) 1, 1, 2, 3, 5, 8, ____próximo número 13, está sendo impresso os números da sequência Fibonacci*/
+
+import java.util.Scanner;
+ 
+public class Main {
+	public static void main(String[] args) {
+
+	 Scanner sc = new Scanner(System.in);
+	 
+      int total_numero, auxiliar, anterior, atual;
+     
+     System.out.print("Quantos números vão ter na sequência: ");
+     total_numero = sc.nextInt();
+     
+     
+     anterior = 0; 
+     atual = 1;
+     for (int i = 1; i <= total_numero; i++) {
+            auxiliar = anterior + atual;
+            anterior = atual;
+            atual = auxiliar;
+        
+         System.out.print(anterior + " ");
+     }
+        
+	sc.close();
+	
+    }
+}   
