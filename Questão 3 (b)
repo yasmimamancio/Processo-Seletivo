@@ -1,4 +1,4 @@
-/* b) 2, 4, 8, 16, 32, 64, ____* próximo número 128/
+/* b) 2, 4, 8, 16, 32, 64, ____ próximo número 128 */
 
 import java.util.Scanner;
  
