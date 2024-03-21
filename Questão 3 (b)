@@ -1,4 +1,4 @@
-/* b) 2, 4, 8, 16, 32, 64, ____ próximo número 128 */
+/* b) 2, 4, 8, 16, 32, 64, ____ próximo número 128 , porque está sendo imprimido o dobro do anterior*/
 
 import java.util.Scanner;
  
@@ -7,14 +7,16 @@ public class Main {
 	
 	 Scanner sc = new Scanner(System.in);
 	 
-	 int dobro, n; 
+	 int dobro, total_numero; 
 	 
-	 System.out.print("Escreva um número: ");
-	 n = sc.nextInt();
+	 System.out.print("Quantos números vão ter na sequência: ");
+	 total_numero = sc.nextInt();
 	 
-	 dobro = n * 2 
-	
-	 System.out.print(dobro);
+	 dobro = 2;
+	 for (int i = 1; i <= total_numero; i++) {
+	    System.out.print(dobro + " ");
+	    dobro *= 2;
+	 }
 	sc.close();
     }
 }
