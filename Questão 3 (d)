@@ -1,0 +1,21 @@
+/*d) 4, 16, 36, 64, ____próximo número 100, está sendo impresso os números pares vezes ele mesmo*/
+
+import java.util.Scanner;
+ 
+public class Main {
+	public static void main(String[] args) {
+
+	 Scanner sc = new Scanner(System.in);
+	 
+     int total_numero;
+     
+     System.out.print("Quantos números vão ter na sequência: ");
+     total_numero = sc.nextInt();
+     
+     for (int i = 2; i <= total_numero*2; i+=2) {
+         System.out.print(i*i + " ");
+     }
+        
+	sc.close();
+    }
+}
