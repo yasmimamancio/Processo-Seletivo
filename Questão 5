@@ -1,0 +1,23 @@
+/*5) Escreva um programa que inverta os caracteres de um string.
+*/
+public class Main
+{
+	public static void main(String[] args) {
+		String nome = "me contrata";
+		int tamanho = nome.length();
+		char[] vetor_caracter = new char[tamanho];
+		char[] vetor_temporario = new char[tamanho];
+		
+	    for (int i = 0; i < tamanho; i++) {
+             vetor_temporario[i] = nome.charAt(i);
+        }
+	    for (int j = 0; j < tamanho; j++) {
+            vetor_caracter[j] = vetor_temporario[tamanho - 1 - j];
+        }
+	    
+	     String nome_invertido = new String(vetor_caracter);
+         System.out.println(nome_invertido);
+	    
+	}   
+	
+}
